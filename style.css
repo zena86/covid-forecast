@@ -1,0 +1,1800 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.allContent {
+    padding-top: 5vw;
+}
+
+/*Header**************************************************************************/
+
+header {
+    background-color: #34383c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    min-height: 5vw;
+}
+
+.logoAndNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+}
+
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+    .logo img {
+        width: 4vw;
+    }
+
+nav {
+    width: 60%;
+}
+
+    nav ul {
+        list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+    nav li {
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        nav li a {
+            font-family: "AvenirNextCyr-Regular";
+            font-size: 1.1vw;
+            font-weight: 900;
+            color: #89949f;
+        }
+
+    nav ul li a:link, nav ul li a:visited {
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        cursor: pointer;
+        color: #cdd4db;
+    }
+
+
+/* Меню Login*******************************************************************/
+
+.login {
+    background-color: #1c2125;
+}
+
+.contanerPhotoName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.photoLogin {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+}
+
+.nameLogin {
+    padding: 0 2vw 0 1vw;
+}
+
+.contantLogin a {
+    text-decoration: none;
+    background-color: #1c2125;
+    font-family: "AvenirNextCyr-Thin";
+    font-size: 1.1vw;
+    color: #929aa2;
+    display: block;
+    padding: 1vw;
+    -webkit-transition: .5s all;
+    transition: .5s all;
+}
+
+.login ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contantLogin a:hover {
+    background-color: #34383c;
+}
+
+.contantLogin li {
+    position: relative;
+}
+
+    /*Всплывающее меню*/
+
+    .contantLogin li:hover .menuDrop li {
+        opacity: 1;
+        right: 0;
+    }
+
+.menuDrop li {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    opacity: 0;
+    right: 9999em;
+    -webkit-transition: .5s opasity;
+    transition: .5s opasity;
+    border-top: .1vw solid transparent;
+}
+
+/*Иконки для меню*/
+
+.menu::after {
+    content: "";
+    position: absolute;
+    border: .6vw solid;
+    border-radius: 0.2vw;
+    border-color: #6c757e transparent transparent transparent;
+    top: 45%;
+    right: 5%;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.menu:hover::after {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    top: 30%;
+}
+
+@media (max-width: 767px) {
+    .logo img {
+        width: 7vw;
+        padding: .5vw;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+        nav ul {
+            padding-left: 3%;
+        }
+
+        nav li a {
+            font-size: 2.1vw;
+        }
+
+    .photoLogin {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+    }
+
+    .nameLogin {
+        padding: 0 4vw 0 2vw;
+    }
+
+    .contantLogin a {
+        font-size: 2.3vw;
+        padding: 2vw;
+    }
+
+    .menu::after {
+        content: "";
+        position: absolute;
+        border: 1.2vw solid;
+        border-radius: 0.2vw;
+        border-color: #6c757e transparent transparent transparent;
+        top: 45%;
+        right: 5%;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+}
+
+
+
+/*Daily Statistics *******************************************************/
+
+.afterHeader {
+    padding-top: -2vw;
+    background-color: white;
+}
+
+.date {
+    padding: 1vw 0 1vw 7vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+    .date p {
+        font-family: "AvenirNextCyr-Regular";
+        font-size: 1.3vw;
+        font-weight: 700;
+        color: #6c757e;
+    }
+
+.contanerDailyStatistics {
+    background-color: #f6f6f6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), color-stop(7%, #f6f6f6));
+    background: linear-gradient(to bottom, #e3e3e3 0%, #f6f6f6 7%);
+    padding: 1.5vw 0 1.5vw 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.dailyStatistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    width: 50%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 1.6vw;
+}
+
+.contanerLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 1.2vw;
+}
+
+.infected {
+    border-left: .3vw solid #91c46b;
+}
+
+.healthy {
+    border-left: .3vw solid #f15822;
+}
+
+.haveDied {
+    border-left: .3vw solid #277e7d;
+}
+
+.contanerLine p {
+    font-family: "AvenirNextCyr-Regular";
+    padding-bottom: .3vw;
+}
+
+.number {
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #5c636b;
+}
+
+.growth {
+    font-size: 1vw;
+    color: #5c636b;
+}
+
+.text {
+    font-size: .7vw;
+    color: #a5acb4;
+}
+
+@media (max-width: 767px) {
+    .afterHeader {
+        padding-top: 4vw;
+    }
+
+    .date {
+        padding: 2vw 0 2vw 10vw;
+    }
+
+        .date p {
+            font-size: 2.6vw;
+        }
+
+    .contanerDailyStatistics {
+        padding: 3vw 0 3vw 8vw;
+    }
+
+    .contanerLine {
+        padding-left: 2.4vw;
+        padding-right: 3vw;
+    }
+
+    .infected,
+    .healthy,
+    .haveDied {
+        border-left-width: .5vw;
+    }
+
+    .contanerLine p {
+        padding-bottom: .6vw;
+    }
+
+    .number {
+        font-size: 3vw;
+    }
+
+    .growth {
+        font-size: 2vw;
+    }
+
+    .text {
+        font-size: 1.4vw;
+    }
+}
+
+
+/*Shedule***************************************************************/
+
+.bgGradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2f1f1), color-stop(7%, #f3f3f3));
+    background: linear-gradient(to bottom, #f2f1f1, #f3f3f3 7%);
+    min-height: 100vh;
+}
+
+.titleSchedule {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 40%;
+    padding: 2vw 0 3vw 7vw;
+}
+
+.titleAndSchedule p {
+    font-family: "AvenirNextCyr-Regular";
+    font-size: 1.3vw;
+    font-weight: 700;
+    padding-right: 4vw;
+}
+
+.titleActive {
+    color: #6c757e;
+}
+
+.titlePassive {
+    color: #a5acb4;
+}
+
+    .titlePassive:hover {
+        color: #9ba0a7;
+        cursor: pointer;
+    }
+
+.schedule {
+    background-color: #f6f6f6;
+    border: solid .1vw #a5aaae;
+    width: 86vw;
+    height: 25vw;
+    margin: 0 auto;
+}
+
+.participantsAndHistogram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 3vw;
+}
+/*Toha Shedule*/
+
+.horizontalScaleGrid {
+    stroke: gray;
+    stroke-width: .01vw;
+}
+
+.horizontalScaleDash, .verticalScaleDash {
+    font-family: "AvenirNextCyr-Thin";
+    font-style: italic;
+    color: #6c757e;
+    font-size: .8vw;
+}
+
+.verticalScaleGrid {
+    stroke: gray;
+    stroke-width: .01vw;
+}
+
+.realConfirmedCases {
+    stroke: #91c46b;
+    stroke-width: .3vw;
+}
+
+.realDethCases {
+    stroke: #277e7d;
+    stroke-width: .3vw;
+}
+
+.userP {
+    stroke-width: .03vw;
+}
+
+.prUserI1 {
+    stroke: #f15822;
+    stroke-width: .05vw;
+}
+
+.prUserI2 {
+    stroke: #D6F48A;
+}
+
+.prUserI3 {
+    stroke: #4D6F1A;
+}
+
+.prUserI4 {
+    stroke: #F45D69;
+}
+
+.prUserI5 {
+    stroke: #01A19A;
+}
+
+.legendI1,
+.legendI2,
+.legendI3,
+.legendI4,
+.legendI5,
+.legendRealCases,
+.legendDethCases {
+    font-family: "AvenirNextCyr-Thin";
+    font-style: italic;
+    color: #6c757e;
+    font-size: .8vw;
+}
+
+
+@media (max-width: 767px) {
+
+    .titleSchedule {
+        width: 60%;
+        padding: 4vw 0 3vw 5vw;
+    }
+
+    .titleAndSchedule p {
+        font-size: 2.6vw;
+    }
+
+    .schedule {
+        width: 90vw;
+        height: 30vw;
+    }
+
+    .participantsAndHistogram {
+        padding-top: 6vw;
+    }
+
+    .horizontalScaleDash, .verticalScaleDash {
+        font-size: 1.1vw;
+    }
+
+    .legendI1,
+    .legendI2,
+    .legendI3,
+    .legendI4,
+    .legendI5,
+    .legendRealCases,
+    .legendDethCases {
+        font-size: 1.1vw;
+    }
+}
+
+
+/*Top Participants*********************************************************/
+
+.contanerParticipants {
+    width: 60%;
+}
+
+.titleParticipants {
+    padding: 2vw 0 1vw 7vw;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.arrows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.btnArrowLeft, .btnArrowRight {
+    width: 2vw;
+    height: 2.2vw;
+    border: solid .1vw #a5aaae;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.btnArrowLeft {
+    border-top-left-radius: .3vw;
+    border-bottom-left-radius: .3vw;
+}
+
+.btnArrowRight {
+    border-left: none;
+    border-top-right-radius: .3vw;
+    border-bottom-right-radius: .3vw;
+}
+
+.arrows img {
+    width: .3vw;
+}
+
+.btnArrowLeft:hover, .btnArrowRight:hover {
+    background-color: #ededed;
+}
+
+.titleParticipants p {
+    font-family: "AvenirNextCyr-Regular";
+    font-size: 1.3vw;
+    font-weight: 900;
+    color: #6c757e;
+}
+
+.allParticipants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    margin-left: 7vw;
+}
+
+.participants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2vw 0 2vw 0;
+    width: 30%;
+}
+
+.nameAndRating {
+    padding-left: .7vw;
+}
+
+.photoParticipants img {
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+}
+
+.allParticipants p {
+    font-family: "AvenirNextCyr-Thin";
+}
+
+.nameParticipants p {
+    color: #6c757e;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.ratingPlace p {
+    color: #a5aaae;
+    font-size: 1vw;
+    font-weight: 900;
+}
+
+
+@media (max-width: 767px) {
+    .contanerParticipants {
+        width: 60%;
+    }
+
+    .titleParticipants {
+        padding: 2vw 0 1vw 5vw;
+    }
+
+    .btnArrowLeft, .btnArrowRight {
+        width: 4vw;
+        height: 4.4vw;
+    }
+
+    .btnArrowLeft,
+    .btnArrowRigh {
+        border-top-left-radius: .6vw;
+        border-bottom-left-radius: .6vw;
+    }
+
+    .arrows img {
+        width: .6vw;
+    }
+
+    .titleParticipants p {
+        font-size: 2.6vw;
+    }
+
+    .allParticipants {
+        margin-left: 5vw;
+    }
+
+    .participants {
+        padding: 1vw 0 1vw 0;
+        width: 50%;
+    }
+
+    .photoParticipants img {
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+
+    .nameParticipants p {
+        font-size: 1.8vw;
+    }
+
+    .ratingPlace p {
+        font-size: 1.5vw;
+    }
+}
+
+
+
+/*Histogram*********************************************************************/
+
+.titleAndHistogram {
+    width: 50%;
+    padding: 0 7vw 0 0;
+}
+
+.titleHistogram {
+    padding: 2vw 0 0 0;
+}
+
+    .titleHistogram p {
+        font-family: "AvenirNextCyr-Regular";
+        font-size: 1.3vw;
+        font-weight: 900;
+        color: #6c757e;
+    }
+
+.histogram {
+    margin: auto;
+    padding: 2.5vw 0 0 0;
+    height: 30vw;
+}
+
+.covidHistogram {
+    width: 100%;
+    height: 100%;
+}
+
+.confirmedBar {
+    stroke: white;
+    stroke-width: 1px;
+    fill: #91c46b;
+    width: 20px;
+    -webkit-transition: fill .3s ease;
+    transition: fill .3s ease;
+    cursor: pointer;
+}
+
+.bar text {
+    stroke: transparent;
+    fill: transparent;
+}
+
+.dethBar {
+    stroke: white;
+    stroke-width: 1px;
+    fill: #277e7d;
+    width: 20px;
+    -webkit-transition: fill .3s ease;
+    transition: fill .3s ease;
+    cursor: pointer;
+}
+
+.bar:hover .dethBar,
+.bar:focus .dethBar {
+    fill: #f15822 !important;
+}
+
+.bar:hover .confirmedBar,
+.bar:focus .confirmedBar {
+    fill: #f15822 !important;
+}
+
+    .bar:hover .confirmedBar text,
+    .bar:focus .confirmedBar text {
+        fill: #6c757e;
+        font-family: "AvenirNextCyr-Thin";
+        font-size: 1.2vw;
+        font-weight: 700;
+    }
+
+.bar:hover .dethBar text,
+.bar:focus .dethBar text {
+    fill: #6c757e;
+    font-family: "AvenirNextCyr-Thin";
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.bar:hover .labelDateVal,
+.bar:focus .labelDateVal {
+    fill: #6c757e;
+    font-family: "AvenirNextCyr-Thin";
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.bar:hover .labelConfirmedVal,
+.bar:focus .labelConfirmedVal {
+    fill: #6c757e;
+    font-family: "AvenirNextCyr-Thin";
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.bar:hover .labelDethVal,
+.bar:focus .labelDethVal {
+    fill: #6c757e;
+    font-family: "AvenirNextCyr-Thin";
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.rectConfirmed {
+    fill: #91c46b;
+}
+
+.rectDeth {
+    fill: #277e7d;
+}
+
+.labelConfirmed,
+.labelDeth {
+    fill: #6c757e;
+    font-family: "AvenirNextCyr-Thin";
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .titleAndHistogram {
+        width: 60%;
+    }
+
+    .histogram {
+        height: 40vw;
+    }
+
+    .titleHistogram p {
+        font-size: 2.6vw;
+    }
+
+    .bar:hover .confirmedBar text,
+    .bar:focus .confirmedBar text,
+    .bar:hover .dethBar text,
+    .bar:focus .dethBar text,
+    .bar:hover .labelDateVal,
+    .bar:focus .labelDateVal,
+    .bar:hover .labelConfirmedVal,
+    .bar:focus .labelConfirmedVal,
+    .bar:hover .labelDethVal,
+    .bar:focus .labelDethVal {
+        font-size: 1.7vw;
+    }
+
+    .labelConfirmed,
+    .labelDeth {
+        font-size: 1.3vw;
+    }
+}
+
+/*Form Login Password**************************************************************/
+
+.contanerForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.dwsForm {
+    background-color: #1c2125;
+    border: solid .1vw #a5aaae;
+    border-radius: .7vw;
+    padding: 1vw;
+    width: 30vw;
+    margin-bottom: 10%;
+    margin-top: 7vw;
+}
+
+    .dwsForm a {
+        -webkit-transition: .5s;
+        transition: .5s;
+        font-family: "AvenirNextCyr-Thin";
+        font-size: .9vw;
+        font-weight: 700;
+        color: #a5acb4;
+    }
+
+        .dwsForm a:hover {
+            -webkit-transition: .5s;
+            transition: .5s;
+            font-family: "AvenirNextCyr-Thin";
+            font-size: .9vw;
+            font-weight: 700;
+            color: #8a8e96;
+        }
+
+.fieldInput {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    padding: 1vw;
+    font-size: .9vw;
+}
+
+.logAndInvalid {
+    margin-top: 1.5vw;
+}
+
+.color1 {
+    border-left: solid .3vw #91c46b;
+}
+
+.color2 {
+    border-left: solid .3vw #f15822;
+}
+
+.color3 {
+    border-left: solid .3vw #277e7d;
+}
+
+label.tab {
+    padding: .5vw;
+    font-family: "AvenirNextCyr-Regular";
+    font-size: 1.3vw;
+    font-weight: 900;
+    color: #a5acb4;
+    display: inline-block;
+    border-top-right-radius: .3vw;
+    border-top-left-radius: .3vw;
+}
+
+    label.tab:hover {
+        cursor: pointer;
+        color: #cdd4db;
+    }
+
+    label.tab.active {
+        color: #6c757e;
+        background: #f2f2f3;
+    }
+
+.tabForm {
+    background-color: #f2f2f3;
+    padding: 1vw 1vw 1.5vw 1vw;
+    display: none;
+}
+
+    .tabForm.active {
+        display: block;
+    }
+
+.btnForm {
+    padding: .7vw;
+    margin: 1.5vw 1.5vw 1vw 16.5vw;
+    background-color: #91c46b;
+    width: 8vw;
+    border-radius: .3vw;
+    border: none;
+    color: white;
+    font-family: "AvenirNextCyr-Regular";
+    font-size: 1.1vw;
+    font-weight: 900;
+    text-align: center;
+}
+
+    .btnForm:hover {
+        background-color: hsla(94, 43%, 59%, 0.84);
+    }
+
+.forget {
+    padding-left: 1.5vw;
+}
+
+.condition {
+    font-family: "AvenirNextCyr-Thin";
+    font-size: .9vw;
+    font-weight: 700;
+    color: #a5acb4;
+    padding-left: 1.5vw;
+}
+
+.invalid {
+    font-family: "AvenirNextCyr-Thin";
+    font-size: .9vw;
+    font-weight: 700;
+    color: #f15822;
+    padding-left: 1.5vw;
+}
+
+
+@media (max-width: 767px) {
+    .btnForm {
+        padding: 1.4vw;
+        font-size: 2.2vw;
+    }
+
+    .containerBtnForm {
+        margin-left: 40%;
+   }
+
+    label.tab {
+        padding: 1vw;
+        font-size: 2.6vw;
+        border-top-right-radius: .6vw;
+        border-top-left-radius: .6vw;
+    }
+
+    .fieldInput {
+        width: 40vw;
+        padding: 2vw;
+        font-size: 1.8vw;
+    }
+
+    .dwsForm {
+        border: .2vw;
+        border-radius: 1.4vw;
+        padding: 2vw;
+        width: 60vw;
+        margin-bottom: 20%;
+        margin-top: 14vw;
+    }
+
+        .dwsForm a,
+        .dwsForm a:hover {
+            font-size: 1.8vw;
+        }
+
+    .logAndInvalid {
+        margin-top: 3vw;
+    }
+
+    .tabForm {
+        padding: 2vw 2vw 3vw 2vw;
+    }
+
+    .forget {
+        padding-left: 3vw;
+    }
+
+    .condition {
+        font-size: 1.8vw;
+        padding-left: 3vw;
+    }
+
+    .invalid {
+        font-size: 1.8vw;
+        padding-left: 6vw;
+    }
+    .invalidFile {
+        padding-left: 0;
+    }
+}
+
+/*Table LiderBoard********************************************/
+
+.contanerTable {
+    padding: 6vw 2vw 2vw 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.table {
+    border-collapse: collapse;
+    border-left: .2vw solid #91c46b;
+    border-right: .2vw solid #91c46b;
+    border-bottom: .2vw solid #91c46b;
+    font-family: "AvenirNextCyr-Regular", Sans-Serif;
+    width: 90%;
+}
+
+.captionTable {
+    background: #91c46b;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    padding: 1.2vw;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    font-size: 1.5vw;
+    font-family: "AvenirNextCyr-Regular";
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.caption {
+    width: 90%;
+    position: relative;
+    z-index: 5;
+}
+
+thead {
+    text-align: left;
+}
+
+    thead th {
+        font-family: "AvenirNextCyr-Regular";
+        font-size: 1.3vw;
+        font-weight: 900;
+        color: #6c757e;
+        padding: 1.2vw 0 1.2vw 2vw;
+    }
+
+.titleRowTable {
+    background-color: #f6f6f6;
+}
+
+tbody td, tbody th {
+    padding: .5vw 0 .5vw 2vw;
+}
+
+tbody td {
+    text-align: left;
+    font-family: "AvenirNextCyr-Thin";
+    color: #6c757e;
+    font-size: 1.2vw;
+    font-weight: 900;
+}
+
+tbody tr:nth-child(odd) {
+    background: #E5E5E5;
+}
+
+tbody tr:nth-child(even) {
+    background: #f6f6f6;
+}
+
+tbody img {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+}
+
+.contanerName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+    .contanerName p {
+        padding-left: 1vw;
+    }
+
+.nodate {
+    font-family: "AvenirNextCyr-Thin";
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #f15822;
+    padding-left: 1.5vw;
+}
+
+#btnTable {
+    margin: 1vw;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+/*Tooltip*/
+
+.tool1 {
+    position: relative;
+}
+
+.formulaTooltip {
+    font-size: 1vw;
+}
+.formulaTooltip img {
+    min-width: 30vw;
+    border-radius: 0;
+}
+
+.noteImg {
+    width: 2vw;
+    height: 2vw;
+}
+
+.tooltiptexttop {
+    visibility: hidden;
+    position: absolute;
+    bottom: 4vw;
+    left: 3vw;
+    z-index: 100;
+    background-color: #97a2b0;
+    border-radius: .3vw;
+    color: white;
+    margin-left: 0;
+    padding: .5vw;
+}
+    .tooltiptexttop p {
+        width: 100%;
+        padding-bottom: 0.5vw;
+    }
+
+.tool1:hover .tooltiptexttop {
+    visibility: visible;
+}
+
+.statusDot {
+    border: solid .2vw #91c46b;
+    width: .2vw;
+    height: .2vw;
+    border-radius: 50%;
+    background-color: #91c46b;
+}
+
+.statusContainer {
+    display:flex;
+    align-items:center;
+}
+
+.tooltiptexttop::before {
+    border: solid;
+    border-width: 1.5vw 1vw 0 1vw;
+    border-color: #97a2b0 transparent transparent transparent;
+    content: "";
+    position: absolute;
+    bottom: -1vw;
+    -webkit-transition: opasity 3s ease, top 1s ease;
+    transition: opasity 3s ease, top 1s ease;
+}
+
+
+@media (max-width: 767px) {
+    .contanerTable {
+        padding: 6vw;
+    }
+
+    .table {
+        border-left-width: .5vw;
+        border-right-width: .5vw;
+        border-bottom-width: .5vw;
+        width: 100%;
+    }
+
+    .captionTable {
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+        padding: 1.5vw;
+        font-size: 2.5vw;
+    }
+
+    .caption {
+        width: 100%;
+    }
+
+    thead th {
+        font-size: 2vw;
+        padding: 1vw 1vw 1vw 2vw;
+    }
+
+    tbody td, tbody th {
+        padding: 1vw 0 1vw 2vw;
+    }
+
+    tbody td {
+        font-size: 2vw;
+    }
+
+    tbody img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .contanerName p {
+        padding-left: 2vw;
+    }
+
+    .nodate {
+        font-size: 2.4vw;
+        padding-left: 3vw;
+    }
+
+    #btnTable {
+        margin: 1.5vw;
+    }
+
+    .statusDot {
+        border-width: .5vw;
+        width: .5vw;
+        height: .5vw;
+    }
+}
+
+/*MyPage**************************************************************/
+
+.contanerSection {
+    padding: 7vw 0 0vw 7vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.form-wrap {
+    background: #91c46b;
+    border-radius: 1vw;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.profile h2 {
+    font-family: "AvenirNextCyr-Regular";
+    font-size: 1.3vw;
+    font-weight: 900;
+    color: white;
+    margin-top: 1.7vw;
+}
+
+.profile img {
+    border-radius: 50%;
+    height: 7vw;
+}
+
+.profile {
+    width: 15vw;
+    text-align: center;
+    padding: 2vw;
+}
+
+
+
+.description {
+    background: #E5E5E5;
+    width: calc(100% - 15vw);
+    padding: 2vw;
+    border-radius: 0 1vw 1vw 0;
+    border: solid .2vw #91c46b;
+    font-family: "AvenirNextCyr-Regular";
+    font-size: 1.3vw;
+    font-weight: 900;
+    color: #6c757e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.placeText {
+    background-color: #E5E5E5;
+    padding: .5vw 0 .5vw 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 95%;
+}
+
+.valuePlaceText {
+    font-family: "AvenirNextCyr-Thin";
+    color: #6c757e;
+    font-size: 1.5vw;
+}
+
+.description div {
+    margin-bottom: 1vw;
+}
+
+#btnMyPage {
+    width: 15vw;
+    margin: 2vw 0 0 0;
+}
+.twoBtn {
+    display: flex;
+    justify-content: space-between;
+}
+.btnLogoLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 2vw 0 0;
+    width: 15vw;
+    background-color: #E5E5E5;
+    color:#6c757e;
+    text-decoration: underline;
+}
+.btnLogoLabel:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.btnLogoLabel img {
+    max-width: 100%;
+    width: 2.35vw;
+    padding-right: 1vw;
+}
+
+@media (max-width: 767px) {
+    .form-wrap {
+        width: 90%;
+    }
+
+    .color1 {
+        border-left-width: .5vw;
+    }
+
+    .profile img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .valuePlaceText {
+        font-size: 3vw;
+    }
+
+    .profile h2 {
+        font-size: 2.2vw;
+    }
+
+    #btnMyPage {
+        width: 25vw;
+        font-size: 2.3vw;
+        margin: 2vw 0 0 0;
+    }
+    .twoBtn {
+        flex-direction: column;
+    }
+    .btnLogoLabel img {
+        width: 4vw;
+   
+}
+}
+
+/*Form Send*******************************************************************/
+
+.contanerFormSend {
+    padding-bottom: 5vw;
+}
+
+.captionAndForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 7vw auto 0 auto;
+}
+
+.contanerTitleForm {
+    width: 30vw;
+}
+
+.formSend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: solid .2vw #91c46b;
+    width: 30vw;
+}
+
+/*Form File*/
+
+.inputFile {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.fileAndInvalid {
+    margin-bottom: 1vw;
+}
+
+.inputFile + label {
+    background-color: white;
+    margin-top: 2vw;
+}
+
+.contantFile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.imgClip {
+    width: 1.5vw;
+}
+
+/*Form Select*/
+
+.selectField {
+    margin: 1vw 0;
+}
+
+.inputText {
+    font-family: "AvenirNextCyr-Thin";
+    font-size: .9vw;
+    font-weight: 700;
+    color: #8a8e96;
+}
+
+@media (max-width: 767px) {
+    .color3 {
+        border-left-width: .5vw;
+    }
+
+    .contanerTitleForm {
+        width: 70vw;
+    }
+
+    .formSend {
+        width: 70vw;
+        border-width: .4vw;
+    }
+
+    .btnForm {
+        width: 25vw;
+        font-size: 2.3vw;
+        margin: 2vw 0 2vw 0;
+    }
+
+    #btnFormSend {
+        width: 15vw;
+    }
+
+    .inputText {
+        font-size: 1.8vw;
+    }
+
+    .imgClip {
+        width: 3vw;
+    }
+
+    .fileAndInvalid {
+        margin-bottom: 5.5vw;
+    }
+
+    .inputFile + label {
+        margin-top: 4vw;
+    }
+
+    .comments {
+        margin-bottom: 2vw;
+    }
+
+    .containerBtnFormSend {
+        margin-left: 37%;
+    }
+
+    #btnFormSend {
+        width: 25vw;
+    }
+
+    #titleFormSend {
+        font-size: 2.5vw;
+    }
+}
+
+
+/*Thank you*/
+
+#thumb {
+    width: 7vw;
+}
+
+#thankYou {
+    margin: 1vw auto;
+    padding: 0;
+}
+
+#contanerThankYou {
+    padding: 2vw 0;
+}
+
+@media (max-width: 767px) {
+    #thankYou {
+        width: 90%;
+        margin-top: 7vw;
+    }
+
+    .placeText {
+        font-size: 3vw;
+    }
+
+    #btnThankYou {
+        margin: 0;
+        width: 20vw;
+        font-size: 2.5vw;
+    }
+
+    #thumb {
+        width: 10vw;
+    }
+
+    .color2 {
+        border-left-width: .5vw;
+    }
+
+    .description {
+        border-width: .4vw;
+    }
+}
+
+
+/*Rules*/
+
+.rules {
+    padding: 5vw 7vw;
+}
+
+    h1, .rules h2 {
+        font-family: "AvenirNextCyr-Regular";
+        font-weight: 700;
+        padding-right: 4vw;
+        color: #6c757e;
+    }
+
+h1 {
+    font-size: 1.7vw;
+    text-transform: uppercase;
+}
+
+.textPadding {
+    padding: 2vw;
+}
+
+.textLine {
+    padding: .5vw;
+}
+
+.rules h2 {
+    font-size: 1.3vw;
+}
+
+.rules p {
+    padding: .1vw 0;
+    text-indent: 3vw;
+    text-align: justify;
+}
+
+.rules p, .rules ul {
+    font-family: "AvenirNextCyr-Thin";
+    color: #6c757e;
+    font-size: 1.2vw;
+    font-weight: 900;
+}
+
+.rules ul {
+    list-style: none;
+    padding-left: 1vw;
+}
+
+.rules span {
+    font-style: italic;
+}
+
+.rules li {
+    padding: .3vw 0;
+}
+
+.rules a {
+    text-decoration: underline;
+    color: #277e7d;
+}
+
+    .rules a:hover {
+        cursor: pointer;
+    }
+
+.containerImg {
+    padding: 2vw;
+}
+
+    .containerImg img {
+        width: 55%;
+    }
+
+.containerCode {
+    background-color: white;
+    width: 30%;
+    margin: 1vw 3vw;
+    padding: 1vw;
+}
+
+.example {
+    margin-top: 2vw;
+}
+
+code {
+    color: #6c757e;
+}
+
+
+@media (max-width: 767px) {
+    .rules {
+        padding: 5vw;
+    }
+
+    .textPadding {
+        padding: 4vw;
+    }
+
+    .textLine {
+        padding: 1vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    .rules h2 {
+        font-size: 2.7vw;
+    }
+
+    .rules p {
+        padding: .5vw 0;
+        text-indent: 5vw;
+    }
+
+    .rules p, .rules ul {
+        font-size: 2.5vw;
+    }
+
+    .rules li {
+        padding: 1vw 0;
+    }
+
+    .containerImg {
+        padding: 4vw;
+    }
+
+        .containerImg img {
+            width: 100%;
+        }
+
+    .containerCode {
+        width: 60%;
+        margin: 1vw 3vw;
+        padding: 2.5vw;
+    }
+
+    .example {
+        margin-top: 4vw;
+    }
+}

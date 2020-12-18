@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "AvenirNextCyr-Thin";
+	src: url("fonts/AvenirNextCyr-Thin.woff"),
+    url("fonts/AvenirNextCyr-Thin.ttf"),
+    url("fonts/AvenirNextCyr-Thin.eot");
+}
+@font-face {
+	font-family: "AvenirNextCyr-Regular";
+	src: url("fonts/AvenirNextCyr-Regular.woff"),
+    url("fonts/AvenirNextCyr-Regular.ttf"),
+    url("fonts/AvenirNextCyr-Regular.eot");
+}

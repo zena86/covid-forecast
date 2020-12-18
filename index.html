@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Covid Predict</title>
+        <link rel="stylesheet" href="stylefonts.css">
+        <link rel="stylesheet" href="style.css">
+        
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        
+        <script src="script.js"></script>
+    </head>
+    
+    <body>
+        
+        <header>
+            <div class="logoAndNav">
+                <div class="logo">
+                    <img src="images/myLogo.svg">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Условия конкурса</a></li>
+                        <li><a href="">Лидеры</a></li>
+                        <li><a href="">Отправить прогноз</a></li>
+                    </ul>
+                </nav>
+                </div>
+            
+            
+            
+            <div class="login side">
+                <ul class="contantLogin">
+                    <li class="menu"><a href="">
+                        <div class="contanerPhotoName">
+                        <img class="photoLogin" src="images/photo.jpg">
+                        <p class="nameLogin">Aaron Sananes</p>
+                        </div>
+                        </a>
+                        
+                            <ul class="menuDrop">
+                                <li><a href="">Выход</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            
+        
+            
+        </header>
+        
+     <div class="allContent bgGradient">
+    <section class="afterHeader">
+            <div class="date">
+                <p>Сегодня</p>
+            </div>
+            <div class="contanerDailyStatistics">
+                <div class="dailyStatistics">
+
+                    <div class="itemStatistics">
+                        <div class="contanerLine infected">
+                            <p class="number">22025</p>
+                            <p class="growth">(+975)</p>
+                            <p class="text">Зарегистрировано</p>
+                        </div>
+                    </div>
+                    <div class="itemStatistics">
+                        <div class="contanerLine healthy">
+                            <p class="number">6406</p>
+                            <p class="growth">(+129)</p>
+                            <p class="text">Выздоровело</p>
+                        </div>
+                    </div>
+                    <div class="itemStatistics">
+                        <div class="contanerLine haveDied">
+                            <p class="number">126</p>
+                            <p class="growth">(+5)</p>
+                            <p class="text">Умерло</p>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        
+    
+        
+       
+        <div class="bgGradient">
+        <section class="titleAndSchedule">
+            <div class="titleSchedule">
+                <div>
+                    <p class="titleActive">Зарегистрировано</p>
+                </div>
+                <div>
+                    <p class="titlePassive">Умерло</p>
+                </div>
+            </div>
+            <div class="schedule">
+                <svg class='covidHistogram' width='100%' height='100%' role='img'><line x1='9.091%' y1='0.000%' x2='9.091%' y2='88.889%' class='horizontalScaleGrid' /><text x='7.386%' textLength='3.409%' y='91.667%' class='horizontalScaleDash'>5 мая</text><line x1='17.483%' y1='0.000%' x2='17.483%' y2='88.889%' class='horizontalScaleGrid' /><text x='15.778%' textLength='3.409%' y='91.667%' class='horizontalScaleDash'>8 мая</text><line x1='25.874%' y1='0.000%' x2='25.874%' y2='88.889%' class='horizontalScaleGrid' /><text x='24.170%' textLength='3.409%' y='91.667%' class='horizontalScaleDash'>11 мая</text><line x1='34.266%' y1='0.000%' x2='34.266%' y2='88.889%' class='horizontalScaleGrid' /><text x='32.561%' textLength='3.409%' y='91.667%' class='horizontalScaleDash'>14 мая</text><line x1='42.657%' y1='0.000%' x2='42.657%' y2='88.889%' class='horizontalScaleGrid' /><text x='40.953%' textLength='3.409%' y='91.667%' class='horizontalScaleDash'>17 мая</text><line x1='51.049%' y1='0.000%' x2='51.049%' y2='88.889%' class='horizontalScaleGrid' /><text x='49.344%' textLength='3.409%' y='91.667%' class='horizontalScaleDash'>20 мая</text><line x1='59.441%' y1='0.000%' x2='59.441%' y2='88.889%' class='horizontalScaleGrid' /><text x='57.736%' textLength='3.409%' y='91.667%' class='horizontalScaleDash'>23 мая</text><line x1='67.832%' y1='0.000%' x2='67.832%' y2='88.889%' class='horizontalScaleGrid' /><text x='66.128%' textLength='3.409%' y='91.667%' class='horizontalScaleDash'>26 мая</text><line x1='76.224%' y1='0.000%' x2='76.224%' y2='88.889%' class='horizontalScaleGrid' /><text x='74.519%' textLength='3.409%' y='91.667%' class='horizontalScaleDash'>29 мая</text><line x1='9.091%' y1='82.491%' x2='81.818%' y2='82.491%' class='verticalScaleGrid' /><text x='0.000%10' y='83.880%' class='verticalScaleDash'>50000</text><line x1='9.091%' y1='76.093%' x2='81.818%' y2='76.093%' class='verticalScaleGrid' /><text x='0.000%10' y='77.482%' class='verticalScaleDash'>100000</text><line x1='9.091%' y1='69.695%' x2='81.818%' y2='69.695%' class='verticalScaleGrid' /><text x='0.000%10' y='71.084%' class='verticalScaleDash'>150000</text><line x1='9.091%' y1='63.297%' x2='81.818%' y2='63.297%' class='verticalScaleGrid' /><text x='0.000%10' y='64.686%' class='verticalScaleDash'>200000</text><line x1='9.091%' y1='56.899%' x2='81.818%' y2='56.899%' class='verticalScaleGrid' /><text x='0.000%10' y='58.288%' class='verticalScaleDash'>250000</text><line x1='9.091%' y1='50.501%' x2='81.818%' y2='50.501%' class='verticalScaleGrid' /><text x='0.000%10' y='51.889%' class='verticalScaleDash'>300000</text><line x1='9.091%' y1='44.103%' x2='81.818%' y2='44.103%' class='verticalScaleGrid' /><text x='0.000%10' y='45.491%' class='verticalScaleDash'>350000</text><line x1='9.091%' y1='37.704%' x2='81.818%' y2='37.704%' class='verticalScaleGrid' /><text x='0.000%10' y='39.093%' class='verticalScaleDash'>400000</text><line x1='9.091%' y1='31.306%' x2='81.818%' y2='31.306%' class='verticalScaleGrid' /><text x='0.000%10' y='32.695%' class='verticalScaleDash'>450000</text><line x1='9.091%' y1='24.908%' x2='81.818%' y2='24.908%' class='verticalScaleGrid' /><text x='0.000%10' y='26.297%' class='verticalScaleDash'>500000</text><line x1='9.091%' y1='18.510%' x2='81.818%' y2='18.510%' class='verticalScaleGrid' /><text x='0.000%10' y='19.899%' class='verticalScaleDash'>550000</text><line x1='9.091%' y1='12.112%' x2='81.818%' y2='12.112%' class='verticalScaleGrid' /><text x='0.000%10' y='13.501%' class='verticalScaleDash'>600000</text><line x1='9.091%' y1='5.714%' x2='81.818%' y2='5.714%' class='verticalScaleGrid' /><text x='0.000%10' y='7.103%' class='verticalScaleDash'>650000</text><line x1='9.091%' y1='86.540%' x2='11.888%' y2='86.425%' class='realConfirmedCases' /><line x1='9.091%' y1='88.875%' x2='11.888%' y2='88.875%' class='realDethCases' /><line x1='11.888%' y1='86.425%' x2='14.685%' y2='86.308%' class='realConfirmedCases' /><line x1='11.888%' y1='88.875%' x2='14.685%' y2='88.874%' class='realDethCases' /><line x1='14.685%' y1='86.308%' x2='17.483%' y2='86.188%' class='realConfirmedCases' /><line x1='14.685%' y1='88.874%' x2='17.483%' y2='88.873%' class='realDethCases' /><line x1='17.483%' y1='86.188%' x2='20.280%' y2='86.067%' class='realConfirmedCases' /><line x1='17.483%' y1='88.873%' x2='20.280%' y2='88.873%' class='realDethCases' /><line x1='20.280%' y1='86.067%' x2='23.077%' y2='85.949%' class='realConfirmedCases' /><line x1='20.280%' y1='88.873%' x2='23.077%' y2='88.872%' class='realDethCases' /><line x1='23.077%' y1='85.949%' x2='25.874%' y2='85.829%' class='realConfirmedCases' /><line x1='23.077%' y1='88.872%' x2='25.874%' y2='88.872%' class='realDethCases' /><line x1='25.874%' y1='85.829%' x2='28.671%' y2='85.706%' class='realConfirmedCases' /><line x1='25.874%' y1='88.872%' x2='28.671%' y2='88.871%' class='realDethCases' /><line x1='28.671%' y1='85.706%' x2='31.469%' y2='85.584%' class='realConfirmedCases' /><line x1='28.671%' y1='88.871%' x2='31.469%' y2='88.870%' class='realDethCases' /><line x1='31.469%' y1='85.584%' x2='34.266%' y2='85.463%' class='realConfirmedCases' /><line x1='31.469%' y1='88.870%' x2='34.266%' y2='88.870%' class='realDethCases' /><line x1='9.091%' y1='87.600%' x2='11.888%' y2='87.470%' class='userP prUserI1' /><line x1='9.091%' y1='88.876%' x2='11.888%' y2='88.875%' class='userP prUserI1' /><line x1='11.888%' y1='87.470%' x2='14.685%' y2='87.321%' class='userP prUserI1' /><line x1='11.888%' y1='88.875%' x2='14.685%' y2='88.874%' class='userP prUserI1' /><line x1='14.685%' y1='87.321%' x2='17.483%' y2='87.165%' class='userP prUserI1' /><line x1='14.685%' y1='88.874%' x2='17.483%' y2='88.871%' class='userP prUserI1' /><line x1='17.483%' y1='87.165%' x2='20.280%' y2='86.963%' class='userP prUserI1' /><line x1='17.483%' y1='88.871%' x2='20.280%' y2='88.867%' class='userP prUserI1' /><line x1='20.280%' y1='86.963%' x2='23.077%' y2='86.756%' class='userP prUserI1' /><line x1='20.280%' y1='88.867%' x2='23.077%' y2='88.864%' class='userP prUserI1' /><line x1='23.077%' y1='86.756%' x2='25.874%' y2='86.510%' class='userP prUserI1' /><line x1='23.077%' y1='88.864%' x2='25.874%' y2='88.860%' class='userP prUserI1' /><line x1='25.874%' y1='86.510%' x2='28.671%' y2='86.246%' class='userP prUserI1' /><line x1='25.874%' y1='88.860%' x2='28.671%' y2='88.856%' class='userP prUserI1' /><line x1='28.671%' y1='86.246%' x2='31.469%' y2='85.924%' class='userP prUserI1' /><line x1='28.671%' y1='88.856%' x2='31.469%' y2='88.847%' class='userP prUserI1' /><line x1='31.469%' y1='85.924%' x2='34.266%' y2='85.587%' class='userP prUserI1' /><line x1='31.469%' y1='88.847%' x2='34.266%' y2='88.835%' class='userP prUserI1' /><line x1='34.266%' y1='85.587%' x2='37.063%' y2='85.185%' class='userP prUserI1' /><line x1='34.266%' y1='88.835%' x2='37.063%' y2='88.825%' class='userP prUserI1' /><line x1='37.063%' y1='85.185%' x2='39.860%' y2='84.739%' class='userP prUserI1' /><line x1='37.063%' y1='88.825%' x2='39.860%' y2='88.808%' class='userP prUserI1' /><line x1='39.860%' y1='84.739%' x2='42.657%' y2='84.280%' class='userP prUserI1' /><line x1='39.860%' y1='88.808%' x2='42.657%' y2='88.799%' class='userP prUserI1' /><line x1='42.657%' y1='84.280%' x2='45.455%' y2='83.729%' class='userP prUserI1' /><line x1='42.657%' y1='88.799%' x2='45.455%' y2='88.780%' class='userP prUserI1' /><line x1='45.455%' y1='83.729%' x2='48.252%' y2='83.013%' class='userP prUserI1' /><line x1='45.455%' y1='88.780%' x2='48.252%' y2='88.757%' class='userP prUserI1' /><line x1='48.252%' y1='83.013%' x2='51.049%' y2='81.991%' class='userP prUserI1' /><line x1='48.252%' y1='88.757%' x2='51.049%' y2='88.729%' class='userP prUserI1' /><line x1='51.049%' y1='81.991%' x2='53.846%' y2='80.597%' class='userP prUserI1' /><line x1='51.049%' y1='88.729%' x2='53.846%' y2='88.689%' class='userP prUserI1' /><line x1='53.846%' y1='80.597%' x2='56.643%' y2='78.568%' class='userP prUserI1' /><line x1='53.846%' y1='88.689%' x2='56.643%' y2='88.626%' class='userP prUserI1' /><line x1='56.643%' y1='78.568%' x2='59.441%' y2='75.806%' class='userP prUserI1' /><line x1='56.643%' y1='88.626%' x2='59.441%' y2='88.545%' class='userP prUserI1' /><line x1='59.441%' y1='75.806%' x2='62.238%' y2='72.284%' class='userP prUserI1' /><line x1='59.441%' y1='88.545%' x2='62.238%' y2='88.429%' class='userP prUserI1' /><line x1='62.238%' y1='72.284%' x2='65.035%' y2='67.899%' class='userP prUserI1' /><line x1='62.238%' y1='88.429%' x2='65.035%' y2='88.275%' class='userP prUserI1' /><line x1='65.035%' y1='67.899%' x2='67.832%' y2='62.340%' class='userP prUserI1' /><line x1='65.035%' y1='88.275%' x2='67.832%' y2='88.087%' class='userP prUserI1' /><line x1='67.832%' y1='62.340%' x2='70.629%' y2='55.439%' class='userP prUserI1' /><line x1='67.832%' y1='88.087%' x2='70.629%' y2='87.877%' class='userP prUserI1' /><line x1='70.629%' y1='55.439%' x2='73.427%' y2='46.479%' class='userP prUserI1' /><line x1='70.629%' y1='87.877%' x2='73.427%' y2='87.588%' class='userP prUserI1' /><line x1='73.427%' y1='46.479%' x2='76.224%' y2='35.008%' class='userP prUserI1' /><line x1='73.427%' y1='87.588%' x2='76.224%' y2='87.244%' class='userP prUserI1' /><line x1='76.224%' y1='35.008%' x2='79.021%' y2='20.249%' class='userP prUserI1' /><line x1='76.224%' y1='87.244%' x2='79.021%' y2='86.788%' class='userP prUserI1' /><line x1='79.021%' y1='20.249%' x2='81.818%' y2='-0.012%' class='userP prUserI1' /><line x1='79.021%' y1='86.788%' x2='81.818%' y2='86.226%' class='userP prUserI1' /><line x1='82.955%' y1='13.889%' x2='84.091%' y2='13.889%' class='userP prUserI1' /><text x='84.773%' y='15.278%' class='legendI1'>baseline</text><line x1='9.091%' y1='86.928%' x2='11.888%' y2='86.621%' class='userP prUserI2' /><line x1='9.091%' y1='88.877%' x2='11.888%' y2='88.876%' class='userP prUserI2' /><line x1='11.888%' y1='86.621%' x2='14.685%' y2='86.347%' class='userP prUserI2' /><line x1='11.888%' y1='88.876%' x2='14.685%' y2='88.875%' class='userP prUserI2' /><line x1='14.685%' y1='86.347%' x2='17.483%' y2='86.071%' class='userP prUserI2' /><line x1='14.685%' y1='88.875%' x2='17.483%' y2='88.874%' class='userP prUserI2' /><line x1='17.483%' y1='86.071%' x2='20.280%' y2='85.773%' class='userP prUserI2' /><line x1='17.483%' y1='88.874%' x2='20.280%' y2='88.873%' class='userP prUserI2' /><line x1='20.280%' y1='85.773%' x2='23.077%' y2='85.458%' class='userP prUserI2' /><line x1='20.280%' y1='88.873%' x2='23.077%' y2='88.872%' class='userP prUserI2' /><line x1='23.077%' y1='85.458%' x2='25.874%' y2='85.140%' class='userP prUserI2' /><line x1='23.077%' y1='88.872%' x2='25.874%' y2='88.870%' class='userP prUserI2' /><line x1='25.874%' y1='85.140%' x2='28.671%' y2='84.810%' class='userP prUserI2' /><line x1='25.874%' y1='88.870%' x2='28.671%' y2='88.869%' class='userP prUserI2' /><line x1='28.671%' y1='84.810%' x2='31.469%' y2='84.443%' class='userP prUserI2' /><line x1='28.671%' y1='88.869%' x2='31.469%' y2='88.868%' class='userP prUserI2' /><line x1='31.469%' y1='84.443%' x2='34.266%' y2='84.074%' class='userP prUserI2' /><line x1='31.469%' y1='88.868%' x2='34.266%' y2='88.867%' class='userP prUserI2' /><line x1='34.266%' y1='84.074%' x2='37.063%' y2='83.675%' class='userP prUserI2' /><line x1='34.266%' y1='88.867%' x2='37.063%' y2='88.866%' class='userP prUserI2' /><line x1='37.063%' y1='83.675%' x2='39.860%' y2='83.229%' class='userP prUserI2' /><line x1='37.063%' y1='88.866%' x2='39.860%' y2='88.865%' class='userP prUserI2' /><line x1='39.860%' y1='83.229%' x2='42.657%' y2='82.850%' class='userP prUserI2' /><line x1='39.860%' y1='88.865%' x2='42.657%' y2='88.864%' class='userP prUserI2' /><line x1='42.657%' y1='82.850%' x2='45.455%' y2='82.475%' class='userP prUserI2' /><line x1='42.657%' y1='88.864%' x2='45.455%' y2='88.862%' class='userP prUserI2' /><line x1='45.455%' y1='82.475%' x2='48.252%' y2='82.073%' class='userP prUserI2' /><line x1='45.455%' y1='88.862%' x2='48.252%' y2='88.861%' class='userP prUserI2' /><line x1='48.252%' y1='82.073%' x2='51.049%' y2='81.655%' class='userP prUserI2' /><line x1='48.252%' y1='88.861%' x2='51.049%' y2='88.860%' class='userP prUserI2' /><line x1='51.049%' y1='81.655%' x2='53.846%' y2='81.239%' class='userP prUserI2' /><line x1='51.049%' y1='88.860%' x2='53.846%' y2='88.859%' class='userP prUserI2' /><line x1='53.846%' y1='81.239%' x2='56.643%' y2='80.810%' class='userP prUserI2' /><line x1='53.846%' y1='88.859%' x2='56.643%' y2='88.858%' class='userP prUserI2' /><line x1='56.643%' y1='80.810%' x2='59.441%' y2='80.339%' class='userP prUserI2' /><line x1='56.643%' y1='88.858%' x2='59.441%' y2='88.857%' class='userP prUserI2' /><line x1='59.441%' y1='80.339%' x2='62.238%' y2='79.870%' class='userP prUserI2' /><line x1='59.441%' y1='88.857%' x2='62.238%' y2='88.855%' class='userP prUserI2' /><line x1='62.238%' y1='79.870%' x2='65.035%' y2='79.371%' class='userP prUserI2' /><line x1='62.238%' y1='88.855%' x2='65.035%' y2='88.854%' class='userP prUserI2' /><line x1='65.035%' y1='79.371%' x2='67.832%' y2='78.812%' class='userP prUserI2' /><line x1='65.035%' y1='88.854%' x2='67.832%' y2='88.853%' class='userP prUserI2' /><line x1='67.832%' y1='78.812%' x2='70.629%' y2='78.344%' class='userP prUserI2' /><line x1='67.832%' y1='88.853%' x2='70.629%' y2='88.852%' class='userP prUserI2' /><line x1='70.629%' y1='78.344%' x2='73.427%' y2='77.887%' class='userP prUserI2' /><line x1='70.629%' y1='88.852%' x2='73.427%' y2='88.851%' class='userP prUserI2' /><line x1='73.427%' y1='77.887%' x2='76.224%' y2='77.406%' class='userP prUserI2' /><line x1='73.427%' y1='88.851%' x2='76.224%' y2='88.850%' class='userP prUserI2' /><line x1='76.224%' y1='77.406%' x2='79.021%' y2='76.903%' class='userP prUserI2' /><line x1='76.224%' y1='88.850%' x2='79.021%' y2='88.849%' class='userP prUserI2' /><line x1='79.021%' y1='76.903%' x2='81.818%' y2='76.403%' class='userP prUserI2' /><line x1='79.021%' y1='88.849%' x2='81.818%' y2='88.847%' class='userP prUserI2' /><line x1='82.955%' y1='18.056%' x2='84.091%' y2='18.056%' class='userP prUserI2' /><text x='84.773%' y='19.444%' class='legendI2'>supertoha</text><line x1='9.091%' y1='87.600%' x2='11.888%' y2='87.470%' class='userP prUserI3' /><line x1='9.091%' y1='88.876%' x2='11.888%' y2='88.875%' class='userP prUserI3' /><line x1='11.888%' y1='87.470%' x2='14.685%' y2='87.321%' class='userP prUserI3' /><line x1='11.888%' y1='88.875%' x2='14.685%' y2='88.874%' class='userP prUserI3' /><line x1='14.685%' y1='87.321%' x2='17.483%' y2='87.165%' class='userP prUserI3' /><line x1='14.685%' y1='88.874%' x2='17.483%' y2='88.871%' class='userP prUserI3' /><line x1='17.483%' y1='87.165%' x2='20.280%' y2='86.963%' class='userP prUserI3' /><line x1='17.483%' y1='88.871%' x2='20.280%' y2='88.867%' class='userP prUserI3' /><line x1='20.280%' y1='86.963%' x2='23.077%' y2='86.756%' class='userP prUserI3' /><line x1='20.280%' y1='88.867%' x2='23.077%' y2='88.864%' class='userP prUserI3' /><line x1='23.077%' y1='86.756%' x2='25.874%' y2='86.510%' class='userP prUserI3' /><line x1='23.077%' y1='88.864%' x2='25.874%' y2='88.860%' class='userP prUserI3' /><line x1='25.874%' y1='86.510%' x2='28.671%' y2='86.246%' class='userP prUserI3' /><line x1='25.874%' y1='88.860%' x2='28.671%' y2='88.856%' class='userP prUserI3' /><line x1='28.671%' y1='86.246%' x2='31.469%' y2='85.924%' class='userP prUserI3' /><line x1='28.671%' y1='88.856%' x2='31.469%' y2='88.847%' class='userP prUserI3' /><line x1='31.469%' y1='85.924%' x2='34.266%' y2='85.587%' class='userP prUserI3' /><line x1='31.469%' y1='88.847%' x2='34.266%' y2='88.835%' class='userP prUserI3' /><line x1='34.266%' y1='85.587%' x2='37.063%' y2='85.185%' class='userP prUserI3' /><line x1='34.266%' y1='88.835%' x2='37.063%' y2='88.825%' class='userP prUserI3' /><line x1='37.063%' y1='85.185%' x2='39.860%' y2='84.739%' class='userP prUserI3' /><line x1='37.063%' y1='88.825%' x2='39.860%' y2='88.808%' class='userP prUserI3' /><line x1='39.860%' y1='84.739%' x2='42.657%' y2='84.280%' class='userP prUserI3' /><line x1='39.860%' y1='88.808%' x2='42.657%' y2='88.799%' class='userP prUserI3' /><line x1='42.657%' y1='84.280%' x2='45.455%' y2='83.729%' class='userP prUserI3' /><line x1='42.657%' y1='88.799%' x2='45.455%' y2='88.780%' class='userP prUserI3' /><line x1='45.455%' y1='83.729%' x2='48.252%' y2='83.013%' class='userP prUserI3' /><line x1='45.455%' y1='88.780%' x2='48.252%' y2='88.757%' class='userP prUserI3' /><line x1='48.252%' y1='83.013%' x2='51.049%' y2='81.991%' class='userP prUserI3' /><line x1='48.252%' y1='88.757%' x2='51.049%' y2='88.729%' class='userP prUserI3' /><line x1='51.049%' y1='81.991%' x2='53.846%' y2='80.597%' class='userP prUserI3' /><line x1='51.049%' y1='88.729%' x2='53.846%' y2='88.689%' class='userP prUserI3' /><line x1='53.846%' y1='80.597%' x2='56.643%' y2='78.568%' class='userP prUserI3' /><line x1='53.846%' y1='88.689%' x2='56.643%' y2='88.626%' class='userP prUserI3' /><line x1='56.643%' y1='78.568%' x2='59.441%' y2='75.806%' class='userP prUserI3' /><line x1='56.643%' y1='88.626%' x2='59.441%' y2='88.545%' class='userP prUserI3' /><line x1='59.441%' y1='75.806%' x2='62.238%' y2='72.284%' class='userP prUserI3' /><line x1='59.441%' y1='88.545%' x2='62.238%' y2='88.429%' class='userP prUserI3' /><line x1='62.238%' y1='72.284%' x2='65.035%' y2='67.899%' class='userP prUserI3' /><line x1='62.238%' y1='88.429%' x2='65.035%' y2='88.275%' class='userP prUserI3' /><line x1='65.035%' y1='67.899%' x2='67.832%' y2='62.340%' class='userP prUserI3' /><line x1='65.035%' y1='88.275%' x2='67.832%' y2='88.087%' class='userP prUserI3' /><line x1='67.832%' y1='62.340%' x2='70.629%' y2='55.439%' class='userP prUserI3' /><line x1='67.832%' y1='88.087%' x2='70.629%' y2='87.877%' class='userP prUserI3' /><line x1='70.629%' y1='55.439%' x2='73.427%' y2='46.479%' class='userP prUserI3' /><line x1='70.629%' y1='87.877%' x2='73.427%' y2='87.588%' class='userP prUserI3' /><line x1='73.427%' y1='46.479%' x2='76.224%' y2='35.008%' class='userP prUserI3' /><line x1='73.427%' y1='87.588%' x2='76.224%' y2='87.244%' class='userP prUserI3' /><line x1='76.224%' y1='35.008%' x2='79.021%' y2='20.249%' class='userP prUserI3' /><line x1='76.224%' y1='87.244%' x2='79.021%' y2='86.788%' class='userP prUserI3' /><line x1='79.021%' y1='20.249%' x2='81.818%' y2='-0.012%' class='userP prUserI3' /><line x1='79.021%' y1='86.788%' x2='81.818%' y2='86.226%' class='userP prUserI3' /><line x1='82.955%' y1='22.222%' x2='84.091%' y2='22.222%' class='userP prUserI3' /><text x='84.773%' y='23.611%' class='legendI3'>1</text><line x1='82.955%' y1='9.722%' x2='84.091%' y2='9.722%' class='realConfirmedCases' /><line x1='82.955%' y1='9.722%' x2='84.091%' y2='9.722%' class='realDethCases' /><text x='84.773%' y='11.111%' class='legendRealCases'>Подствержденных случаев</text><text x='84.773%' y='11.111%' class='legendDethCases'>Умерло</text></svg>
+            </div>
+</section>
+
+        
+            
+        <section class="participantsAndHistogram">
+            <div class="contanerParticipants">
+            <div class="titleParticipants">
+                <p>Лидеры</p>
+                <div class="arrows">
+                    <a href=""><div class="btnArrowLeft"><img src="images/arrowLeft.png"></div></a>
+                    <a href=""><div class="btnArrowRight"><img src="images/arrowRight.png"></div></a>
+                </div>
+            </div>
+            <div class="allParticipants">
+
+                <div class="participants">
+                    <div class="photoParticipants">
+                        <img src="images/photo.jpg">
+                       
+                    </div>
+                    <div class="nameAndRating">
+                        <div class="nameParticipants">
+                            <p>Daryl Ginn</p>
+                        </div>
+                        <div class="ratingPlace">
+                            <p>#1</p>
+                        </div>
+                    </div>
+                </div>
+            
+
+            
+            <div class="participants">
+                    <div class="photoParticipants">
+                        <img src="images/photo.jpg">
+                    </div>
+                <div class="nameAndRating">
+                    <div class="nameParticipants">
+                        <p>John Mac</p>
+                    </div>
+                    <div class="ratingPlace">
+                        <p>#2</p>
+                    </div>
+                 </div>
+                </div>
+            
+            <div class="participants">
+                    <div class="photoParticipants">
+                        <img src="images/photo.jpg">
+                    </div>
+                <div class="nameAndRating">
+                    <div class="nameParticipants">
+                        <p>Aaron Sananes</p>
+                    </div>
+                    <div class="ratingPlace">
+                        <p>#3</p>
+                    </div>
+                 </div>
+                </div>
+
+            
+            <div class="participants">
+                    <div class="photoParticipants">
+                        <img src="images/photo.jpg">
+                    </div>
+                <div class="nameAndRating">
+                    <div class="nameParticipants">
+                        <p>Erik Henebratt</p>
+                    </div>
+                    <div class="ratingPlace">
+                        <p>#4</p>
+                    </div>
+                 </div>
+                </div>
+            
+            <div class="participants">
+                    <div class="photoParticipants">
+                        <img src="images/photo.jpg">
+                    </div>
+                <div class="nameAndRating">
+                    <div class="nameParticipants">
+                        <p>Lindsay Scott</p>
+                    </div>
+                    <div class="ratingPlace">
+                        <p>#5</p>
+                    </div>
+                 </div>
+                </div>
+            
+            <div class="participants">
+                    <div class="photoParticipants">
+                        <img src="images/photo.jpg">
+                    </div>
+                <div class="nameAndRating">
+                    <div class="nameParticipants">
+                        <p>Jimmy Mars</p>
+                    </div>
+                    <div class="ratingPlace">
+                        <p>#6</p>
+                    </div>
+                 </div>
+                </div>
+            
+            <div class="participants">
+                    <div class="photoParticipants">
+                        <img src="images/photo.jpg">
+                    </div>
+                <div class="nameAndRating">
+                    <div class="nameParticipants">
+                        <p>Daryl Ginn</p>
+                    </div>
+                    <div class="ratingPlace">
+                        <p>#7</p>
+                    </div>
+                 </div>
+                </div>
+            
+            <div class="participants">
+                    <div class="photoParticipants">
+                        <img src="images/photo.jpg">
+                    </div>
+                <div class="nameAndRating">
+                    <div class="nameParticipants">
+                        <p>John Mac</p>
+                    </div>
+                    <div class="ratingPlace">
+                        <p>#8</p>
+                    </div>
+                 </div>
+                </div>
+
+            
+
+            <div class="participants">
+                    <div class="photoParticipants">
+                        <img src="images/photo.jpg">
+                    </div>
+                <div class="nameAndRating">
+                    <div class="nameParticipants">
+                        <p>Aaron Sananes</p>
+                    </div>
+                    <div class="ratingPlace">
+                        <p>#9</p>
+                    </div>
+                 </div>
+                </div>
+            </div>
+            </div>
+            <div class="titleAndHistogram">
+                <div class="titleHistogram">
+                    <p>Статистика распространения</p>
+                </div>
+                <div class="histogram">
+                    
+                    <svg class="covidHistogram" width="100%" height="100%" role="img"><rect x="0" y="9%" class="rectConfirmed" width="2%" height="2%"></rect><rect x="0" y="16%" class="rectDeth" width="2%" height="2%"></rect><text class="labelConfirmed" x="3%" y="12%">Зарегистрировано </text><text class="labelDeth" x="3%" y="19%">Умерло </text><g class="bar"><text class="labelDateVal" x="3%" y="5%">17.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">969</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="87%" y="39%">969</text><rect width="3%" height="27%" x="87%" y="43%"></rect></g><g class="dethBar"><text x="87%" y="78%">5</text><rect width="3%" height="3%" x="87%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">16.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">951</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="84%" y="40%">951</text><rect width="3%" height="26%" x="84%" y="44%"></rect></g><g class="dethBar"><text x="84%" y="78%">4</text><rect width="3%" height="3%" x="84%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">15.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">958</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="81%" y="40%">958</text><rect width="3%" height="26%" x="81%" y="44%"></rect></g><g class="dethBar"><text x="81%" y="78%">5</text><rect width="3%" height="3%" x="81%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">14.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">947</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="78%" y="40%">947</text><rect width="3%" height="26%" x="78%" y="44%"></rect></g><g class="dethBar"><text x="78%" y="78%">5</text><rect width="3%" height="3%" x="78%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">13.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">952</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="75%" y="40%">952</text><rect width="3%" height="26%" x="75%" y="44%"></rect></g><g class="dethBar"><text x="75%" y="78%">4</text><rect width="3%" height="3%" x="75%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">12.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">967</text><text class="labelDethVal" x="16%" y="19%">7</text><g class="confirmedBar"><text x="72%" y="39%">967</text><rect width="3%" height="27%" x="72%" y="43%"></rect></g><g class="dethBar"><text x="72%" y="79%">7</text><rect width="3%" height="4%" x="72%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">11.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">933</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="69%" y="40%">933</text><rect width="3%" height="26%" x="69%" y="44%"></rect></g><g class="dethBar"><text x="69%" y="78%">4</text><rect width="3%" height="3%" x="69%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">10.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">921</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="66%" y="41%">921</text><rect width="3%" height="25%" x="66%" y="45%"></rect></g><g class="dethBar"><text x="66%" y="78%">5</text><rect width="3%" height="3%" x="66%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">09.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">951</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="63%" y="40%">951</text><rect width="3%" height="26%" x="63%" y="44%"></rect></g><g class="dethBar"><text x="63%" y="78%">5</text><rect width="3%" height="3%" x="63%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">08.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">933</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="60%" y="40%">933</text><rect width="3%" height="26%" x="60%" y="44%"></rect></g><g class="dethBar"><text x="60%" y="78%">5</text><rect width="3%" height="3%" x="60%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">07.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">913</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="57%" y="41%">913</text><rect width="3%" height="25%" x="57%" y="45%"></rect></g><g class="dethBar"><text x="57%" y="78%">4</text><rect width="3%" height="3%" x="57%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">06.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">905</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="54%" y="41%">905</text><rect width="3%" height="25%" x="54%" y="45%"></rect></g><g class="dethBar"><text x="54%" y="78%">5</text><rect width="3%" height="3%" x="54%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">05.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">861</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="51%" y="42%">861</text><rect width="3%" height="24%" x="51%" y="46%"></rect></g><g class="dethBar"><text x="51%" y="78%">4</text><rect width="3%" height="3%" x="51%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">04.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">784</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="48%" y="44%">784</text><rect width="3%" height="22%" x="48%" y="48%"></rect></g><g class="dethBar"><text x="48%" y="78%">4</text><rect width="3%" height="3%" x="48%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">03.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">877</text><text class="labelDethVal" x="16%" y="19%">2</text><g class="confirmedBar"><text x="45%" y="42%">877</text><rect width="3%" height="24%" x="45%" y="46%"></rect></g><g class="dethBar"><text x="45%" y="77%">2</text><rect width="3%" height="2%" x="45%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">02.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">911</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="42%" y="41%">911</text><rect width="3%" height="25%" x="42%" y="45%"></rect></g><g class="dethBar"><text x="42%" y="78%">4</text><rect width="3%" height="3%" x="42%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">01.05.2020</text><text class="labelConfirmedVal" x="32%" y="12%">890</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="39%" y="42%">890</text><rect width="3%" height="24%" x="39%" y="46%"></rect></g><g class="dethBar"><text x="39%" y="78%">4</text><rect width="3%" height="3%" x="39%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">30.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">846</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="36%" y="43%">846</text><rect width="3%" height="23%" x="36%" y="47%"></rect></g><g class="dethBar"><text x="36%" y="78%">5</text><rect width="3%" height="3%" x="36%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">29.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">973</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="33%" y="39%">973</text><rect width="3%" height="27%" x="33%" y="43%"></rect></g><g class="dethBar"><text x="33%" y="78%">5</text><rect width="3%" height="3%" x="33%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">28.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">919</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="30%" y="41%">919</text><rect width="3%" height="25%" x="30%" y="45%"></rect></g><g class="dethBar"><text x="30%" y="78%">4</text><rect width="3%" height="3%" x="30%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">27.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">826</text><text class="labelDethVal" x="16%" y="19%">3</text><g class="confirmedBar"><text x="27%" y="43%">826</text><rect width="3%" height="23%" x="27%" y="47%"></rect></g><g class="dethBar"><text x="27%" y="77%">3</text><rect width="3%" height="2%" x="27%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">26.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">873</text><text class="labelDethVal" x="16%" y="19%">5</text><g class="confirmedBar"><text x="24%" y="42%">873</text><rect width="3%" height="24%" x="24%" y="46%"></rect></g><g class="dethBar"><text x="24%" y="78%">5</text><rect width="3%" height="3%" x="24%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">25.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">817</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="21%" y="43%">817</text><rect width="3%" height="23%" x="21%" y="47%"></rect></g><g class="dethBar"><text x="21%" y="78%">4</text><rect width="3%" height="3%" x="21%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">24.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">751</text><text class="labelDethVal" x="16%" y="19%">3</text><g class="confirmedBar"><text x="18%" y="45%">751</text><rect width="3%" height="21%" x="18%" y="49%"></rect></g><g class="dethBar"><text x="18%" y="77%">3</text><rect width="3%" height="2%" x="18%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">23.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">741</text><text class="labelDethVal" x="16%" y="19%">2</text><g class="confirmedBar"><text x="15%" y="46%">741</text><rect width="3%" height="20%" x="15%" y="50%"></rect></g><g class="dethBar"><text x="15%" y="77%">2</text><rect width="3%" height="2%" x="15%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">22.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">558</text><text class="labelDethVal" x="16%" y="19%">3</text><g class="confirmedBar"><text x="12%" y="50%">558</text><rect width="3%" height="16%" x="12%" y="54%"></rect></g><g class="dethBar"><text x="12%" y="77%">3</text><rect width="3%" height="2%" x="12%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">21.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">459</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="9%" y="53%">459</text><rect width="3%" height="13%" x="9%" y="57%"></rect></g><g class="dethBar"><text x="9%" y="78%">4</text><rect width="3%" height="3%" x="9%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">20.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">1485</text><text class="labelDethVal" x="16%" y="19%">4</text><g class="confirmedBar"><text x="6%" y="26%">1485</text><rect width="3%" height="40%" x="6%" y="30%"></rect></g><g class="dethBar"><text x="6%" y="78%">4</text><rect width="3%" height="3%" x="6%" y="70%"></rect></g></g><g class="bar"><text class="labelDateVal" x="3%" y="5%">19.04.2020</text><text class="labelConfirmedVal" x="32%" y="12%">0</text><text class="labelDethVal" x="16%" y="19%">2</text><g class="confirmedBar"><text x="3%" y="66%">0</text><rect width="3%" height="0%" x="3%" y="70%"></rect></g><g class="dethBar"><text x="3%" y="77%">2</text><rect width="3%" height="2%" x="3%" y="70%"></rect></g></g></svg>
+                </div>
+            </div>
+            
+        </section>
+         </div>
+
+        <section class="contanerForm">
+                <div class="dwsForm">
+                    <label class="tab active" title="Вкладка1">Авторизация</label>
+                    <label class="tab" title="Вкладка2">Регистрация</label>
+                
+                <form class="tabForm active">
+                    <div class="invalid"><p>Неверный логин или пароль</p></div>
+                    <div class="logAndInvalid">
+                        <input class="fieldInput color1" type="login" placeholder="Логин">
+                        <div class="invalid"><p>Неверный логин</p></div>
+                    </div> 
+                    <div class="logAndInvalid">
+                        <input class="fieldInput color2" type="password" placeholder="Пароль">
+                        <div class="invalid"><p>Неверный пароль</p></div>
+                    </div>
+                    <div class="containerBtnForm">
+                    <button class="btnForm">Войти</button>
+                    </div>
+                    <div>
+                    <a  class="forget" href="#">Забыли логин или пароль?</a>
+                    </div>
+                </form>
+               
+                <form class="tabForm">
+                    <div class="invalid"><p>Неверный логин или пароль</p></div>
+                    <div class="logAndInvalid">
+                        <input class="fieldInput color1" type="login" placeholder="Введите имя">
+                        <div class="invalid"><p>Неверный логин или пароль</p></div>
+                    </div> 
+                    <div class="logAndInvalid">
+                        <input class="fieldInput color2" type="password" placeholder="Введите пароль">
+                        <div class="invalid"><p>Неверный логин или пароль</p></div>
+                    </div> 
+                    <div class="containerBtnForm">
+                    <button class="btnForm">Войти</button>
+                    </div>
+
+
+                    <div class="recover">
+                        <label class="condition">Ознакомлен(-а) и принимаю <a href="#">условия конкурса</a></label>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+            
+        <section class="contanerTable">
+            <table id="sessionsGrid" class="table">
+                <div class="caption"><p class="captionTable">Таблица лидеров</p></div>
+                <thead>
+                    <tr class="titleRowTable">
+                        <th>№</th>
+                        <th>Имя</th>
+                        <th>Точность</th>
+                        <th>Дата отправки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr><td class="nodate" colspan="4"><p>нет данных</p></td></tr>
+                    <tr><td>1</td><td><div class="contanerName"><img src="/avatars/b_c4cdc8e9-7864-46e6-a582-6cc7763840d1.png"><p>b</p></div></td>
+                        
+                        
+                        <td class="tool1">
+                            <p>0.17839498684344834</p>                               
+
+                                <div class="tooltiptexttop">
+                                  <p>hjfjgjlhl;jl;k'l'
+                                    cxfcfvvvvvvvvvhhhhhhhhhjjjjjj  ''''''''''l
+                                    ;
+                                    
+                                    ;
+                                    ;
+                                    ;</p>
+                                </div>
+                        </td>
+                        
+                        <td>2020-05-10T17:11:17</td></tr><tr><td>2</td><td><div class="contanerName"><img src="/avatars/supertoha_e6eeb702-56cd-4d41-aacb-117f6b0df9c0.png"><p>supertoha</p></div></td><td class="tool" data-tool="zzzzzzzzzzzzzzz">0.11892999122896557</td><td>2020-05-10T09:30:01</td></tr>
+                
+            
+                <tr><td>1</td><td><div class="contanerName"><img src="images/photo.jpg"><p>b</p></div></td><td class="tool" data-tool="zzzzzzzzzzzzzzz">0.17839498684344834</td><td>2020-05-10T17:11:17</td></tr><tr><td>2</td><td><div class="contanerName"><img src="images/photo.jpg"><p>supertoha</p></div></td><td class="tool" data-tool="zzzzzzzzzzzzzzz" >0.11892999122896557</td><td>2020-05-10T09:30:01</td></tr></tbody>
+                
+                
+                
+            </table>
+        <a href="#" class="btn"><div class="btnForm" id="btnTable"><p>Еще...</p></div></a>
+        </section>
+            
+            
+        <section class="contanerSection"> 
+            <div class="form-wrap">
+              <div class="profile"><img src="images/photo.jpg">
+                <h2>Aaron Sananes</h2>
+              </div>
+              
+                <div class="description">
+                
+                <div class="placeText color1">
+                  <p>Mесто в рейтинге:&nbsp;&nbsp;&nbsp;</p>
+                    <p class="valuePlaceText">#3</p>
+                </div>
+                
+                <div class="placeText color2">
+                    <p>Лучший score:&nbsp;&nbsp;&nbsp;</p>
+                    <p class="valuePlaceText">072531</p>
+                </div>
+                <div class="twoBtn">
+                <a href="#" class="btn"><div class="btnForm btnLogoLabel"> <img src="images/Slack_Icon.png"><p>Slack чат</p></div></a>
+                  
+                <a href="#" class="btn"><div class="btnForm" id="btnMyPage"><p>Отправить прогноз</p></div></a>
+                </div>
+              </div> 
+            </div>
+        </section>
+            
+
+
+        <section class="contanerFormSend">
+            <div class="captionAndForm">
+            <div class="contanerTitleForm captionTable">
+                <p class="titleForm" id="titleFormSend">Отправить прогноз</p>
+            </div>
+            
+            <div class="formSend">
+            <form enctype="multipart/form-data" method="post">
+                
+            <div class="fileAndInvalid">
+                <input id="file" class="inputFile" type="file" name="file" multiple>
+                <label for="file" class="fieldInput color1 inputText"> <div class="contantFile"><span>Добавить файл</span><img class="imgClip" src="images/paperclip.svg"></div></label>
+                <div class="invalid invalidFile">
+                <p>ljlksajdfl;asjf;ls</p>
+                </div>
+            </div>   
+            
+                <input type="text"class="comments fieldInput color2 inputText" placeholder="Комментарии">
+                
+                <p class="selectField">
+                    <select class="fieldInput color3 inputText">
+                        <option value="один">Ветвь № 1</option>
+                        <option value="два">Ветвь № 2</option>
+                    </select>
+                </p>
+                <div class="containerBtnFormSend"><input class="btnForm" id="btnFormSend" type="submit" value="Отправить"></div>
+            </form>
+            </div>
+                
+            </div>
+        </section>
+         
+            
+        <section class="contanerSection" id="contanerThankYou"> 
+            <div class="form-wrap" id="thankYou">
+              <div class="profile">
+                  
+                  
+                  <svg id="thumb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 81"><style>.st0{fill:#f3f3f3;} .st1{fill:#f3f3f3;}</style><g id="Group"><path id="Shape" class="st0" d="M54 39.5c.7-.8 1-1.7 1-2.7 0-.9-.3-1.8-1-2.5s-1.5-1-2.4-1h-5c0-.2.1-.3.1-.4 0-.1.1-.3.2-.4.1-.1.1-.3.2-.3l.5-1c.1-.3.2-.6.3-1.1.1-.5.2-.9.2-1.4V28c0-.2 0-.5-.1-.8-.1-.4-.1-.7-.2-.9-.1-.2-.2-.5-.4-.8-.2-.3-.4-.5-.7-.7-.3-.2-.6-.3-1.1-.5S44.5 24 44 24c-.3 0-.6.1-.8.3-.2.2-.4.5-.6.9-.2.4-.3.7-.4.9-.1.3-.1.6-.2 1.1-.1.5-.2.9-.2 1.1-.1.2-.2.5-.3.9-.2.4-.3.7-.6.9-.4.4-1 1.1-1.8 2.2-.6.8-1.2 1.5-1.8 2.2-.6.7-1.1 1.1-1.4 1.1-.3 0-.6.1-.8.4-.2.2-.3.5-.3.8v11.7c0 .3.1.6.3.8s.5.3.8.4c.4 0 1.4.3 2.9.8.9.3 1.7.6 2.2.7.5.2 1.3.3 2.2.5.9.2 1.8.3 2.6.3h2.3c1.6 0 2.8-.5 3.6-1.4.7-.8 1-1.9.9-3.3.5-.4.8-1 1-1.7.2-.7.2-1.5 0-2.1.6-.7.8-1.6.8-2.5-.1-.5-.2-.9-.4-1.5z"/><path id="Shape_1_" class="st0" d="M32.5 35.6h-5.4c-.3 0-.6.1-.8.4-.2.2-.4.5-.4.8v12.1c0 .3.1.6.4.8.2.2.5.4.8.4h5.4c.3 0 .6-.1.8-.4.2-.2.4-.5.4-.8V36.8c0-.3-.1-.6-.4-.8-.2-.3-.4-.4-.8-.4zm-2.9 11.3c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.2-.2-.3-.4-.3-.7 0-.3.1-.5.3-.7.2-.2.4-.3.7-.3.3 0 .5.1.7.3.2.2.3.4.3.7 0 .3-.1.5-.3.7z"/></g><path class="st1" d="M40 0C17.9 0 0 18.1 0 40.5S17.9 81 40 81s40-18.1 40-40.5S62.1 0 40 0zm0 73C22.4 73 8 58.4 8 40.5S22.4 8 40 8s32 14.6 32 32.5S57.6 73 40 73z"/></svg>
+              </div>
+              
+                <div class="description">
+                
+                <div class="placeText color2">
+                  <p>Благодарю за регистрацию!</p>
+                </div>
+                
+               
+                
+                  <a href="#" class="btn"><div class="btnForm" id="btnThankYou"><p>Далее</p></div></a>
+                
+              </div> 
+            </div>
+        </section>
+         
+         
+         
+         <section>
+             <div class="rules"> 
+                 <div class="textPadding"> <div class="textLine color2"><h1>Прогнозирование распространения COVID-19 в Беларуси</h1></div>
+                 </div>
+                 <p>Участникам предстоит построить прогноз, наиболее точно отражающий динамику числа зарегистрированных случаев заболевания и смертности в Республике Беларусь.</p>
+                 <p>Период прогнозирования: с 1 Июня 2020 по 1 Июля 2020.</p>
+                 <p>Победитель за лучший прогноз получит вознаграждение в размере $100 (спонсоры приветствуются).</p>
+                 <p>Участники могут использовать любые источники данных конечные прогнозы будут валидироваться по <a>2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE.</a></p>
+                 <div class="textPadding"> <div class="textLine color1"><h2>Формат прогнозов</h2></div></div>
+                 <p>Необходимо построить прогноз на все даты периода прогнозирования. Для каждой даты нужно предсказать количество зафиксированных случаев и смертей (всего по состоянию на этот день). Прогноз начинает действовать на следующий день после отправки прогноза, не учитывая предыдущие даты.Таблица лидеров будет обновляться сразу после обновления данных Johns Hopkins CSSE.</p>
+                 <p>Данные необходимо отправить на странице Отправки прогнозов в формате .CSV</p>
+                 <div class="listRules">
+                     <p class="example">Пример .csv файла</p>
+                     <div class="containerCode">
+                     <code>date, prediction_confirmed, prediction_deaths<br/>
+                         2020-06-13,45238,4256<br/>
+                         2020-06-14,48985,4789<br/>
+                         2020-06-15,50248,4977<br/>
+                         2020-06-16,55123,5120<br/>
+                 </code>
+                </div>
+                  <div class="textPadding"> <div class="textLine color1"><h2>Метрика оценки прогнозов</h2></div></div>
+                 <div class="containerImg">
+                     <img src="images/metric.svg" alt="формула">
+                 </div>
+                 <ul>
+                     <li><span>PredictedConfirmed</span> - прогнозируемое количество подтвержденных случаев на дату пересчета метрики;</li>
+                     <li><span>ActualConfirmed</span> - прогнозируемое количество подтвержденных случаев на дату пересчета метрики;</li>
+                     <li><span>PredictedDeths</span> - прогнозируемое количество смертей на дату пересчета метрики;</li>
+                     <li><span>ActualDeths</span> - прогнозируемое количество смертей на дату пересчета метрики;</li>
+                     <li><span>d </span>- количество дней прошедших с момента отправки прогноза.</li>
+                 </ul>
+               
+                 </div>
+             </div>
+         </section>
+            
+            
+           
+            
+            
+            
+        
+    
+    </div>
+    </body>  
+    
+</html>
